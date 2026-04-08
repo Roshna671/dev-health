@@ -1,0 +1,21 @@
+# Sample configuration for Dev Environment Health Monitor
+
+required_tools:
+  - git
+  - docker
+  - python3
+
+required_env_vars:
+  - DATABASE_URL
+  - SECRET_KEY
+  - DEBUG
+
+python_version: "3.10"
+
+node_version: "18"
+
+required_ports_free:
+  - 5432
+  - 8000
+
+min_disk_gb: 2
